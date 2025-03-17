@@ -59,6 +59,10 @@ def main():
 
                inflammatory_mononuclear_infiltrate, band_like_infiltrate, age]
 
+modelfilename = 'trained_model.pkl'
+model = load_model(modelfilename)
+prediction = predict_with_model(model,User_input)
+st.write('the prediction',prediction)
 if __name__ == "__main__":
   main()
 
