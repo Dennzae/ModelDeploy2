@@ -5,5 +5,5 @@ def main():
   st.title('Dermatology Machine Learning')
   st.info('This Using Machine learning')
 
-if __name__ == "__main__:
+if __name__ == "__main__":
   main()
