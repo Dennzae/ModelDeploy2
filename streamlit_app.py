@@ -2,4 +2,4 @@ import streamlit as st
 
 st.title('Dermatology Machine Learning')
 
-st.write('This Using Machine learning')
+st.info('This Using Machine learning')
