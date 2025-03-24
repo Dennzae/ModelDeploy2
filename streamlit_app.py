@@ -6,6 +6,7 @@ import pickle as pkl
 
 with open('rf_model.pkl', 'rb') as file:
     loaded_model = pkl.load(file)
+print(f'Model type: {type(loaded_model)}')
 
 with open('scaler.pkl', 'rb') as file:
     loaded_scaler = pkl.load(file)
