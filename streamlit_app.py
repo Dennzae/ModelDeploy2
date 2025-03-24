@@ -18,12 +18,12 @@ with open('target_mapping.pkl', 'rb') as file:
 
 def main():
     st.title('Machine Leaning Obesity Prediction App')
-    st.subheader('Name: Benjamin Eleazar Manafe')
-    st.subheader('NIM: 2702340704')
+    st.subheader('Name: Dennis Purnomo Yohaidi')
+    st.subheader('NIM: 2704354741')
     st.info('This app will predict your obesity level!')
     
     with st.expander('**Data**'):
-        data = pd.read_csv('obesity-prediction-streamlit/ObesityDataSet_raw_and_data_sinthetic.csv')
+        data = pd.read_csv('ObesityDataSet_raw_and_data_sinthetic.csv')
         st.write('This is a raw data')
         st.dataframe(data)
     
