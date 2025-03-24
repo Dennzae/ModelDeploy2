@@ -4,26 +4,26 @@ import numpy as np
 import pickle as pkl
 
 
-with open('obesity-prediction-streamlit/rf_model.pkl', 'rb') as file:
+with open('rf_model.pkl', 'rb') as file:
     loaded_model = pkl.load(file)
 
-with open('obesity-prediction-streamlit/scaler.pkl', 'rb') as file:
+with open('scaler.pkl', 'rb') as file:
     loaded_scaler = pkl.load(file)
 
-with open('obesity-prediction-streamlit/encoder.pkl', 'rb') as file:
+with open('encoder.pkl', 'rb') as file:
     loaded_encoder = pkl.load(file)
 
-with open('obesity-prediction-streamlit/target_vals.pkl', 'rb') as file:
+with open('target_mapping.pkl', 'rb') as file:
     loaded_target_vals = pkl.load(file)
 
 def main():
     st.title('Machine Leaning Obesity Prediction App')
-    st.subheader('Name: Benjamin Eleazar Manafe')
-    st.subheader('NIM: 2702340704')
+    st.subheader('Name: Dennis Purnomo Yohaidi')
+    st.subheader('NIM: 2702354741')
     st.info('This app will predict your obesity level!')
     
     with st.expander('**Data**'):
-        data = pd.read_csv('obesity-prediction-streamlit/ObesityDataSet_raw_and_data_sinthetic.csv')
+        data = pd.read_csv('ObesityDataSet_raw_and_data_sinthetic.csv')
         st.write('This is a raw data')
         st.dataframe(data)
     
