@@ -23,7 +23,7 @@ def main():
     st.info('This app will predict your obesity level!')
     
     with st.expander('**Data**'):
-        data = pd.read_csv('obesity-prediction-streamlit/ObesityDataSet_raw_and_data_sinthetic.csv')
+        data = pd.read_csv('ObesityDataSet_raw_and_data_sinthetic.csv')
         st.write('This is a raw data')
         st.dataframe(data)
     
