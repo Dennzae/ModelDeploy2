@@ -13,7 +13,7 @@ with open('scaler.pkl', 'rb') as file:
 with open('encoder.pkl', 'rb') as file:
     loaded_encoder = pkl.load(file)
 
-with open('target_mapping.pkl', 'rb') as file:
+with open('target_vals.pkl', 'rb') as file:
     loaded_target_vals = pkl.load(file)
 
 def main():
